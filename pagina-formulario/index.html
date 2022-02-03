@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Formulario de pesquisa</h1>
+            <p id="description" class="description text-center">
+                Obrigado por dedicar um pouco do seu tempo pra essa pesquisa!
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" 
+                       id="name" 
+                       class="form-control"
+                       placeholder="Escreva seu nome"
+                       required/>
+            </div>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" 
+                        id="email" 
+                        class="form-control"
+                        placeholder="Escreva seu Email"  
+                        required/>
+            </div>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="number" id="number-label">Idade
+                <span class="clue">(opicional)</span>
+                </label>
+                <input type="number"
+                       name="age"
+                       id="number"
+                       min="10"
+                       max="200" 
+                       class="form-control"
+                       placeholder="Coloque a sua idade"
+                       required/>
+            </div> 
+        <div class="form-group">
+            <p>Qual opção melhor descreve sua função atual?</p>
+            <select name="role" id="dropdown" class="form-control"required>
+                <option disabled selected value>Selecione a sua função atual</option>
+                <option value="student">Estudante</option>
+                <option value="Job">Trabalho em tempo integral</option>
+                <option value="leaner">Estudo em tempo integral</option>
+                <option value="preferNo">Prefere não falar</option>
+                <option value="other">Outros</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Você gostaria de ser um Desenvolvedor FullStack?</p>
+            <label>
+            <input type="radio" 
+                   name="chose-user" 
+                   value="sim"
+                   class="input-radio"
+                   checked/>É claro que sim mano!
+            <label>
+                <input type="radio" 
+                       name="chose-user" 
+                       value="maybe"
+                       class="input-radio"
+                       checked/>Seilah mano.
+            </label>
+            <label>
+                <input type="radio" 
+                       name="chose-user" 
+                       value="not-sure"
+                       class="input-radio"
+                       checked/>To suave!
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>Qual é o programa que você mais usa pra programar?</p>
+            <select name="idelike" id="ide-like" class="form-control required">
+                <option disabled selected value>Selecione uma opção</option>
+                <option value="Visualcode">Visual Studio Code</option>
+                <option value="eclipse">Eclipse</option>
+                <option value="sublimetext">Sublime Text</option>
+                <option value="netbeans">NetBeans</option>
+                <option value="phpstorm">PHPStorm</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Qual é a sua formação</p>
+            <select id="university-degree" name="universitydegree" class="form-control" required>
+              <option disabled selected value>Selecione uma opção</option>
+              <option value="bacharel">Bacharel</option>
+              <option value="licenciatura">Licenciatura</option>
+              <option value="tecnologo">Tecnologo</option>
+              <option value="posgraduado">Pós Graduado</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Qual é a área da sua formação</p>
+            <select id="training-area" name="trainingarea" class="form-control" required>
+              <option disabled selected value>Selecione uma opção</option>
+              <option value="ti">TI</option>
+              <option value="designer">Designer</option>
+              <option value="adm">Administração</option>
+              <option value="marketing">Marketing</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+              <p>O que você gostaria de melhorar?
+                <span class="clue">(Marque as opções que se aplicam a você)</span>
+              </p>
+              <label
+              ><input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />Projetos Front-end</label>
+            <label>
+              <input
+                name="prefer"
+                value="back-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />Projetos Back-end</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="data-visualization"
+                type="checkbox"
+                class="input-checkbox"
+              />Visualização de Dados</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="challenges"
+                type="checkbox"
+                class="input-checkbox"
+              />API's</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="pyton"
+                type="checkbox"
+                class="input-checkbox"
+              />Pyton</label
+            >
+            <label>
+                <input
+                    name="prefer"
+                    value="machinelearning"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Machine Learning</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="javascript"
+                type="checkbox"
+                class="input-checkbox"
+              />JavaScript</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="designresponsivo"
+                type="checkbox"
+                class="input-checkbox"
+              />Design Responsivo</label
+            >
+            
+          <div class="form-group">
+            <p>Quer dar alguma sujestão</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Escreva seu comentario aqui..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Enviar! :3
+            </button>
+          </div>
+          </div>
+        </form>
+    </div>
+</body>
+</html>
