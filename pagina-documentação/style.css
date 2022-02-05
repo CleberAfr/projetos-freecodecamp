@@ -10,7 +10,7 @@ body {
 }
 
 #navbar {
-  border-radius: 0 0 20px;
+  border-radius:  0 20px;
   background-color: rgb(238, 242, 255);  
   position: fixed;
   min-width: 290px;
@@ -36,7 +36,7 @@ header {
   transition: 1s;
 }
 
-#navbar ul {
+#navbar ul {    
   height: 100%;
   padding: 0;
   overflow-y: auto;
