@@ -37,7 +37,8 @@ header {
 }
 
 #navbar ul {    
-  height: 100%;
+  border-radius: 10px;
+  height: 83%;
   padding: 0;
   overflow-y: auto;
   overflow-x: hidden;
