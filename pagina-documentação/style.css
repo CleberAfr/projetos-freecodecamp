@@ -48,12 +48,13 @@ header {
     
 }
 #navbar li{
-  color: #4d4e53;
-  border-top: 1px solid;
+    background-color: bisque;
+    color: #4d4e53;
+    border-top: 1px solid;
   list-style: none;
   position: relative;
   width: 100%;
-  border-radius: 10px;
+  border-radius:  10px 0 0;
   border-style: ridge;
 }
 
